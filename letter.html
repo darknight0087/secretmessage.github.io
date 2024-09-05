@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Person.</strong>
+                        <p>
+                            Now you know everything about how much I feel, how much I don't... I can't tell you why I love you.
+                            1. Your voice is very lovely 
+                            2. I spoke the way you did and no one else did in my entire life. 
+                            3. Thank you so much for showing so much trust in me for the first time. 
+                            4. And there is a very point which I cannot explain because that feeling will tell you everything, then what will be left for later.\n
+                            5. And feelings are not temporary and feelings end.... and no matter how much I have to wait, I am in no hurry......
+                            And in the end I have to say that I remain happy... because I like your smile so much...
+                            And thank you so much for reading this message completely...'''
+                            
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
